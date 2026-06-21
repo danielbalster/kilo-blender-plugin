@@ -1,5 +1,10 @@
 # @dbalster/blender-plugin
 
+> **100% AI-generated proof-of-concept.** This project was requested as: re-write the
+> official [blender-mcp](https://github.com/danielbalster/blender_mcp) Python add-on
+> into a TypeScript plugin for OpenCode/Kilo. Every line of code was written by an
+> AI language model.
+
 A Kilo/OpenCode TypeScript plugin that integrates with a running Blender instance
 via the blender-mcp add-on TCP server.
 

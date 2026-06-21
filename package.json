@@ -1,6 +1,6 @@
 {
   "name": "@dbalster/blender-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Kilo/OpenCode TypeScript plugin providing a Blender integration interface",
   "license": "MIT",
   "author": "Daniel Balster",
