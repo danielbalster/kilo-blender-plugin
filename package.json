@@ -1,0 +1,53 @@
+{
+  "name": "@dbalster/blender-plugin",
+  "version": "0.1.0",
+  "description": "Kilo/OpenCode TypeScript plugin providing a Blender integration interface",
+  "license": "MIT",
+  "author": "Daniel Balster",
+  "type": "module",
+  "main": "./dist/blender.js",
+  "exports": {
+    ".": {
+      "import": "./dist/blender.js",
+      "types": "./dist/blender.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist",
+    "fetch-docs": "node fetch-docs.mjs"
+  },
+  "dependencies": {
+    "@kilocode/plugin": "^7.1.20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "kilo",
+    "opencode",
+    "blender",
+    "plugin",
+    "3d",
+    "mcp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbalster/kilo-blender-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbalster/kilo-blender-plugin/issues"
+  },
+  "homepage": "https://github.com/danielbalster/kilo-blender-plugin#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
