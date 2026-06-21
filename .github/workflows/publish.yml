@@ -19,7 +19,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: corepack enable
       - run: npm ci
-      - run: npm run fetch-docs
+      - run: npm run fetch-docs || true
       - run: npm run build
       - run: npm publish --access public --provenance
         env:
